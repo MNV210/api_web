@@ -11,10 +11,11 @@
         "dest": "/api/index.php"
       },
       {
-        "src": "/((?!api).*)",
+        "src": "/(.*)",
         "dest": "/api/index.php"
       }
     ],
+    "cleanUrls": true,
     "env": {
       "APP_ENV": "production",
       "APP_DEBUG": "true",
