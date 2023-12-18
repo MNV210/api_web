@@ -22,12 +22,7 @@
       "APP_ENV": "production",
       "APP_DEBUG": "false",
       "APP_URL": "https://api_web.vercel.app",
-      "APP_CONFIG_CACHE": "/tmp/config.php",
-      "APP_EVENTS_CACHE": "/tmp/events.php",
-      "APP_PACKAGES_CACHE": "/tmp/packages.php",
-      "APP_ROUTES_CACHE": "/tmp/routes.php",
-      "APP_SERVICES_CACHE": "/tmp/services.php",
-      "VIEW_COMPILED_PATH": "/tmp",
+  
       "DB_CONNECTION": "mysql",
       "DB_HOST": "bccaezx5ffuwqlxqdrkc-mysql.services.clever-cloud.com",
       "DB_PORT": "3306",
@@ -37,6 +32,11 @@
       "CACHE_DRIVER": "array",
       "LOG_CHANNEL": "stderr",
       "SESSION_DRIVER": "cookie"
+    },
+    "build": {
+      "env": {
+        "APP_KEY": "@laravel:APP_KEY"
+      }
     }
   }
   
