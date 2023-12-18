@@ -92,4 +92,4 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::delete("/cancel_order/{id}", [OrderController::class, "destroy"]);
     Route::apiResource('/wish_list',WishListController::class);
 });
-
+ 
