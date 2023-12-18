@@ -7,12 +7,15 @@
     },
     "routes": [
       {
-        "source": "/api/(.*)",
-        "function": "api/index.php"
+        "handle": "filesystem"
       },
       {
-        "source": "/(.*)",
-        "destination": "/api/index.php"
+        "src": "/api/(.*)",
+        "dest": "/api/index.php"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.php"
       }
     ],
     "cleanUrls": true,
@@ -20,6 +23,7 @@
       "APP_ENV": "production",
       "APP_DEBUG": "true",
       "APP_URL": "https://api-web-mu.vercel.app/",
+      "APP_KEY": "base64:yourGeneratedKeyHere",
       "APP_CONFIG_CACHE": "/tmp/config.php",
       "APP_EVENTS_CACHE": "/tmp/events.php",
       "APP_PACKAGES_CACHE": "/tmp/packages.php",
