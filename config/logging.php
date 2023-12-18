@@ -87,7 +87,7 @@ return [
 
         'stderr' => [
             'driver' => 'stderr',
-            'level' => env('LOG_LEVEL', 'debug'),
+            'level' => "debug",
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),
             'with' => [
